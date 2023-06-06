@@ -3,8 +3,10 @@
 namespace App\Models\Blog;
 
 use App\Traits\GetModelByUuid;
+use App\Traits\UuidGenerator;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Spatie\Sluggable\HasSlug;
@@ -15,10 +17,22 @@ class Category extends Model
     use HasFactory;
     use HasSlug;
     use GetModelByUuid;
+    use UuidGenerator;
+
+    protected $fillable = [
+        'name',
+        'description',
+        'slug',
+    ];
 
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class);
+    }
+
+    public function postsMany(): BelongsToMany
+    {
+        return $this->belongsToMany(Post::class);
     }
 
     public function seo(): MorphOne

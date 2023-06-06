@@ -4,6 +4,7 @@ namespace App\Models\Blog;
 
 use App\Models\User;
 use App\Traits\GetModelByUuid;
+use App\Traits\UuidGenerator;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -19,6 +20,17 @@ class Post extends Model
     use HasFactory;
     use HasSlug;
     use GetModelByUuid;
+    use UuidGenerator;
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'description',
+        'body',
+        'active',
+        'category_id',
+        'user_id'
+    ];
 
     public function user(): BelongsTo
     {
@@ -38,6 +50,11 @@ class Post extends Model
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(Category::class);
     }
 
     public function seo(): MorphOne

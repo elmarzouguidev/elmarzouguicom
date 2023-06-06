@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('seos', function (Blueprint $table) {
             $table->id();
+            $table->uuid();
+            
             $table->morphs('seoable');
             $table->string('meta_title')->nullable();
             $table->string('meta_url')->nullable();
