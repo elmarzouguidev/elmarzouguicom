@@ -6,3 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [LoginController::class, 'loginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login')->name('login.post');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

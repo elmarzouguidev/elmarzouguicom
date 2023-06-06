@@ -14,8 +14,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('post_tag', function (Blueprint $table) {
-            $table->foreignIdFor(Post::class)->index();
-            $table->foreignIdFor(Tag::class)->index();
+            $table->id();
+            $table->foreignIdFor(Post::class)->index()->constrained();
+            $table->foreignIdFor(Tag::class)->index()->constrained();
+            $table->timestamps();
         });
     }
 

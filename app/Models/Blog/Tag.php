@@ -4,6 +4,7 @@ namespace App\Models\Blog;
 
 use App\Traits\GetModelByUuid;
 use App\Traits\UuidGenerator;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -36,5 +37,10 @@ class Tag extends Model
             ->saveSlugsTo('slug')
             ->doNotGenerateSlugsOnUpdate()
             ->slugsShouldBeNoLongerThan(250);
+    }
+
+    public function scopeList(Builder $query): Builder
+    {
+        return $query->select(['id', 'uuid', 'name']);
     }
 }

@@ -26,31 +26,31 @@ Route::prefix(config('app.admin_url'))->as('admin:')->group(function () {
 
     Route::prefix('categories')->as('category:')->group(function () {
 
-        Route::get('/', [ListCategoryController::class])->name('list');
-        Route::get('/create', [CreateCategoryController::class])->name('create');
+        Route::get('/', ListCategoryController::class)->name('list');
+        Route::get('/create', CreateCategoryController::class)->name('create');
         Route::post('/create', [CreateCategoryController::class, 'store'])->name('create.store');
-        Route::get('/show/{category}', [ShowCategoryController::class])->name('show');
-        Route::get('/edit/{category}', [EditCategoryController::class])->name('edit');
+        Route::get('/show/{category}', ShowCategoryController::class)->name('show');
+        Route::get('/edit/{category}', EditCategoryController::class)->name('edit');
         Route::post('/edit/{category}', [EditCategoryController::class, 'update'])->name('edit.update');
     });
 
     Route::prefix('tags')->as('tag:')->group(function () {
 
-        Route::get('/', [ListTagController::class])->name('list');
-        Route::get('/create', [CreateTagController::class])->name('create');
+        Route::get('/', ListTagController::class)->name('list');
+        Route::get('/create', CreateTagController::class)->name('create');
         Route::post('/create', [CreateTagController::class, 'store'])->name('create.store');
-        Route::get('/show/{tag}', [ShowTagController::class])->name('show');
-        Route::get('/edit/{tag}', [EditTagController::class])->name('edit');
+        Route::get('/show/{tag}', ShowTagController::class)->name('show');
+        Route::get('/edit/{tag}', EditTagController::class)->name('edit');
         Route::post('/edit/{tag}', [EditTagController::class, 'update'])->name('edit.update');
     });
 
     Route::prefix('posts')->as('post:')->group(function () {
 
-        Route::get('/', [ListPostController::class])->name('list');
-        Route::get('/create', [CreatePostController::class])->name('create');
+        Route::get('/', ListPostController::class)->name('list');
+        Route::get('/create', CreatePostController::class)->name('create');
         Route::post('/create', [CreatePostController::class, 'store'])->name('create.store');
-        Route::get('/show/{post}', [ShowPostController::class])->name('show');
-        Route::get('/edit/{post}', [EditPostController::class])->name('edit');
+        Route::get('/show/{post}', ShowPostController::class)->name('show');
+        Route::get('/edit/{post}', EditPostController::class)->name('edit');
         Route::post('/edit/{post}', [EditPostController::class, 'update'])->name('edit.update');
     });
 });
