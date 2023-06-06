@@ -5,6 +5,12 @@ use Illuminate\Support\ServiceProvider;
 
 return [
 
+    /****
+     * Admin url 
+     * 
+     */
+    'admin_url' => env('ADMIN_URL', 'admin'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Blog\Category;
+namespace App\Http\Controllers\Admin\Blog\Post;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ShowController extends Controller
+class ListPostController extends Controller
 {
     /**
      * Handle the incoming request.

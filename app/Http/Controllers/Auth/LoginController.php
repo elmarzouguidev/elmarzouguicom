@@ -40,6 +40,11 @@ class LoginController extends Controller
 
     public function loginForm()
     {
-        return view('auth.loginTow');
+        return view('auth.login');
+    }
+
+    private function redirectTo()
+    {
+        return route('admin:home');
     }
 }

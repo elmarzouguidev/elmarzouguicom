@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\Blog\Post;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ShowController extends Controller
+class EditPostController extends Controller
 {
     /**
      * Handle the incoming request.
