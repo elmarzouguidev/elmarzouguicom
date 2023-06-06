@@ -1,7 +1,10 @@
-@extends('Admin.Layouts.app')
+@extends('Layouts.app')
 
 @section('content')
     <div class="container">
+        
+        @include('layouts.__messages')
+
         <form action="{{ route('admin:post:edit.update', $post->uuid) }}" method="post">
             @csrf
             <div class="mb-3">

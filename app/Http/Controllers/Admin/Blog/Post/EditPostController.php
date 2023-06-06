@@ -37,6 +37,6 @@ class EditPostController extends Controller
             $post->tags()->sync($tags);
         });
 
-        return redirect(route('admin:post:list'))->with('success', "l'article a été ajouté avec succès");
+        return redirect(route('admin:post:edit', $post))->with('success', "l'article a été Modifié avec succès");
     }
 }

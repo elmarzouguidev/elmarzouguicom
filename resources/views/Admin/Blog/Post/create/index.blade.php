@@ -1,4 +1,4 @@
-@extends('Admin.Layouts.app')
+@extends('Layouts.app')
 
 @section('content')
     <div class="container">
