@@ -47,4 +47,9 @@ class LoginController extends Controller
     {
         return route('admin:home');
     }
+
+    public static function toHome()
+    {
+        return route('admin:home');
+    }
 }

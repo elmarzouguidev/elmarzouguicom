@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix(config('app.admin_url'))->as('admin:')->group(function () {
+Route::prefix(config('app.admin_url'))->as('admin:')->middleware('auth')->group(function () {
 
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
