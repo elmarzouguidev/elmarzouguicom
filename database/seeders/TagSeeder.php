@@ -17,7 +17,6 @@ class TagSeeder extends Seeder
             ['name' => 'dev'],
             ['name' => 'network'],
             ['name' => 'vps'],
-            ['name' => 'ip'],
         ];
 
         foreach ($tags as $tag) {
