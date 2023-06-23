@@ -4,6 +4,7 @@ namespace App\Models\Blog;
 
 use App\Models\User;
 use App\Traits\GetModelByUuid;
+use App\Traits\Seoable;
 use App\Traits\UuidGenerator;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -11,7 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
@@ -25,7 +25,9 @@ class Post extends Model implements HasMedia
     use GetModelByUuid;
     use UuidGenerator;
     use InteractsWithMedia;
-    
+
+    use Seoable;
+
 
     protected $fillable = [
         'title',
@@ -60,11 +62,6 @@ class Post extends Model implements HasMedia
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(Category::class);
-    }
-
-    public function seo(): MorphOne
-    {
-        return $this->morphOne(Seo::class, 'seoable');
     }
 
     public function getSlugOptions(): SlugOptions

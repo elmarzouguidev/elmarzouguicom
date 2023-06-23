@@ -3,6 +3,7 @@
 namespace App\Models\Blog;
 
 use App\Traits\GetModelByUuid;
+use App\Traits\Seoable;
 use App\Traits\UuidGenerator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -20,6 +21,8 @@ class Category extends Model
     use GetModelByUuid;
     use UuidGenerator;
 
+    use Seoable;
+
     protected $fillable = [
         'name',
         'description',
@@ -34,11 +37,6 @@ class Category extends Model
     public function postsMany(): BelongsToMany
     {
         return $this->belongsToMany(Post::class);
-    }
-
-    public function seo(): MorphOne
-    {
-        return $this->morphOne(Seo::class, 'seoable');
     }
 
     public function getSlugOptions(): SlugOptions
