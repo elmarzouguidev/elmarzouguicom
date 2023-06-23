@@ -25,6 +25,7 @@ class Post extends Model implements HasMedia
     use GetModelByUuid;
     use UuidGenerator;
     use InteractsWithMedia;
+    
 
     protected $fillable = [
         'title',
