@@ -5,19 +5,19 @@
             <div class="navbar-brand-box">
                 <a href="{{ route('admin:home') }}" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ appLogo() }}" alt="Facturis SAAS" height="50">
+                        <img src="{{ appLogo() }}" alt="Elmarzougui" height="50">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ appLogo() }}" alt="Facturis SAAS" height="70">
+                        <img src="{{ appLogo() }}" alt="Elmarzougui" height="70">
                     </span>
                 </a>
 
                 <a href="{{ route('admin:home') }}" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ appLogo() }}" alt="Facturis SAAS" height="50">
+                        <img src="{{ appLogo() }}" alt="Elmarzougui" height="50">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ appLogo() }}" alt="Facturis SAAS" height="70">
+                        <img src="{{ appLogo() }}" alt="Elmarzougui" height="70">
                     </span>
                 </a>
             </div>
@@ -90,13 +90,13 @@
                             <div class="col">
                                 <a class="dropdown-icon-item" href="">
                                     <i class="bx bx-plus-medical"></i>
-                                    <span>Ajouter un devis</span>
+                                    <span>Ajouter un article</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="">
                                     <i class="bx bx-plus-medical"></i>
-                                    <span>Ajouter une Facture</span>
+                                    <span>Ajouter une catégorie</span>
                                 </a>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                     <img class="rounded-circle header-profile-user" src="{{ getAvatar(auth()->user()->email) }}">
                     <span class="d-none d-xl-inline-block ms-1" key="t-henry">
 
-                        {{ auth()->user()->name ?? '' }}
+                        {{ auth()->user()->nom ?? '' }}
 
                     </span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>

@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="{{ asset('images/logo-app-2.png') }}">
     @stack('css')
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
 
     <style>
         .datepicker {
@@ -48,6 +48,8 @@
         </div>
 
     </div>
+
+    <script src="{{ asset('js/app.js') }}"></script>
 
     @stack('scripts')
 

@@ -2,12 +2,17 @@ import jquery from "jquery";
 
 window.$ = window.jQuery = jquery;
 
-import './main/bootstrap.bundle.min';
 
-import'./main/metisMenu.min';
+require('./main/bootstrap.bundle.min');
 
-import'./main/simplebar.min';
+require('./main/metisMenu.min');
 
-import'./main/waves.min';
+require('./main/simplebar.min');
 
-import'./main';
+require('./main/waves.min');
+
+require('./main');
+
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();

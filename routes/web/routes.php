@@ -4,11 +4,11 @@ use App\Http\Controllers\Admin\Blog\Category\CategoryController;
 use App\Http\Controllers\Admin\Blog\Post\PostController;
 use App\Http\Controllers\Admin\Blog\Tag\TagController;
 use App\Http\Controllers\Admin\Home\HomeController;
-
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 

@@ -16,17 +16,17 @@
 
                 <li class="menu-title" key="t-apps">Gestion Blog</li>
                 <li class="facturis_menu">
-                    <a href="" class="waves-effect">
+                    <a href="{{route('admin:post:list')}}" class="waves-effect">
                         {{-- <span class="badge rounded-pill bg-success float-end" key="t-new">New</span> --}}
                         <i class="bx bx-user-circle"></i>
-                        <span key="t-clients">Gestions des clients</span>
+                        <span key="t-articles">Articles</span>
                     </a>
                 </li>
                 <li class="facturis_menu">
-                    <a href="" class="waves-effect">
+                    <a href="{{route('admin:category:list')}}" class="waves-effect">
                         {{-- <span class="badge rounded-pill bg-success float-end" key="t-new">New</span> --}}
                         <i class="bx bx-user-circle"></i>
-                        <span key="t-demandes">Demande de compte</span>
+                        <span key="t-categories">Catégories</span>
                     </a>
                 </li>
 

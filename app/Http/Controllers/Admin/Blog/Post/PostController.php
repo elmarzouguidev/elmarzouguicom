@@ -17,9 +17,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        $categories = Category::list()->get();
+        $posts = Post::all();
 
-        return view('Admin.Blog.Category.index', compact('categories'));
+        return view('Admin.Blog.Post.index', compact('posts'));
     }
 
     /**
