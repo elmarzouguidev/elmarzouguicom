@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('title', 255);
             $table->string('slug', 255)->unique();
             $table->longText('description')->nullable();
-            $table->longText('body');
+            $table->longText('body')->nullable();
             $table->boolean('active')->default(true);
 
             $table->foreignIdFor(Category::class)->index()->nullable()->constrained()->nullOnDelete();
