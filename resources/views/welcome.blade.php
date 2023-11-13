@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow" />
-    <title>Elmarzougui Abdelghafour </title>
+    <title>Elmarzougui Abdelghafour Senior Software Engineer - PHP Laravel  </title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
