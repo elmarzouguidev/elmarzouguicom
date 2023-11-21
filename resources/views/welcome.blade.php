@@ -847,8 +847,13 @@
                     <h1> Elmarzougui.com ( site en cours de construction ) </h1>
                 </div>
             </div>
+            <a href="https://www.digitalocean.com/?refcode=13dd4b6460a0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
+                <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" />
+            </a>
         </div>
+
     </div>
+
 </body>
 
 </html>
