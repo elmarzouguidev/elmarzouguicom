@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Elmarzougui Abdelghafour Senior Software Engineer - PHP Laravel  </title>
-
+    <title>Elmarzougui Abdelghafour Senior Software Engineer - PHP Laravel </title>
+    <meta name="description" content="Elmarzougui Abdelghafour Senior Software Engineer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -847,8 +846,10 @@
                     <h1> Elmarzougui.com ( site en cours de construction ) </h1>
                 </div>
             </div>
-            <a href="https://www.digitalocean.com/?refcode=13dd4b6460a0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
-                <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" />
+            <a
+                href="https://www.digitalocean.com/?refcode=13dd4b6460a0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
+                <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg"
+                    alt="DigitalOcean Referral Badge" />
             </a>
         </div>
 
