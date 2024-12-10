@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elmarzougui Abdelghafour Senior Software Engineer - PHP Laravel </title>
+    <title>Développeur web Maroc - Elmarzougui </title>
     <meta name="description" content="Elmarzougui Abdelghafour Senior Software Engineer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -843,7 +843,7 @@
 
 
                 <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                    <h1> Elmarzougui.com ( site en cours de construction ) </h1>
+                    <h1> Développeur web Maroc </h1>
                 </div>
             </div>
             <a
